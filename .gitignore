@@ -1,5 +1,5 @@
 # IPython
-.ipnb_checkpoints/
+.ipynb_checkpoints/
 
 # Canvas API key
 API_KEY.txt
