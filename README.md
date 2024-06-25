@@ -1,10 +1,13 @@
-# Student self-graded homework workflow
-
-Author: Dr. Matthew Ford (mattford@uw.edu) [Website](https://dashdotrobot.com/)
+# Student self-graded homework
 
 A secure, scalable approach to student-graded homework for self-reflection.
 
+Author: Dr. Matthew Ford (mattford@uw.edu) [Website](https://dashdotrobot.com/)
+
 Use this script to compare student self-graded scores to instructor scores and enter final grades into the Canvas gradebook.
+
+## Setup
+1. Obtain a Canvas API key and put it in a text file called "API_KEY.txt" in the same folder as this Python script.
 
 ## Creating an assignment
 1. Assign homework on Canvas: Create a zero-point assignment called "Homework X - submit to Gradescope"
@@ -17,3 +20,5 @@ Use this script to compare student self-graded scores to instructor scores and e
 1. Students complete the "Homework X - enter your own grade" assignment on Canvas, entering their numeric score as the "answer" for each question.
 2. Instructors grade the "check problem" on Gradescope and sync grades to Canvas.
 3. After students have submitted their own scores, run the IPython script to compare and synchronize grades. The script will automatically create a new Canvas assignment "Homework X - final grade".
+4. Review the log file and look for significant discrepancies.
+5. When you are ready to post final scores, update `enter_into_gradebook = True` and run the script again.
